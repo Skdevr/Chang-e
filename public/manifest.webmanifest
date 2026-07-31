@@ -1,0 +1,10 @@
+{
+  "name": "Chang'e",
+  "short_name": "Chang'e",
+  "description": "Seu universo de mídias asiáticas em um único lugar.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08090B",
+  "theme_color": "#08090B",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
