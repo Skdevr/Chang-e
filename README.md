@@ -1,21 +1,30 @@
 # 🌙 Chang'e (嫦娥)
 
-> **Uma plataforma moderna para gerenciamento, organização e acompanhamento de mídias asiáticas.**
->
-> **Mais do que um AnimeList, um laboratório de Engenharia de Software e Inteligência Artificial.**
+<div align="center">
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+# Construído para durar. Projetado para evoluir.
+
+### Uma plataforma open source para gerenciamento de mídias asiáticas, desenvolvida como um laboratório permanente de Engenharia de Software e Inteligência Artificial.
+
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-orange)
+![License](https://img.shields.io/badge/license-AGPL%20v3-blue.svg)
 ![Python](https://img.shields.io/badge/Python-3.13-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Latest-009688)
 ![React](https://img.shields.io/badge/React-19-61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-17-336791)
 
+</div>
+
 ---
 
 # 📖 Sobre o Projeto
 
-O **Chang'e** é uma plataforma Full Stack desenvolvida para centralizar o gerenciamento de mídias asiáticas, permitindo acompanhar de forma organizada o consumo de:
+O **Chang'e** é uma plataforma open source criada para centralizar o gerenciamento de mídias asiáticas em uma única aplicação.
+
+Seu objetivo é oferecer uma experiência moderna para organizar bibliotecas pessoais, acompanhar o progresso de leitura e consumo de conteúdo, além de evoluir continuamente para novas formas de interação com a coleção do usuário.
+
+O projeto suporta diferentes tipos de mídia, como:
 
 - 📚 Mangás
 - 🇰🇷 Manhwas
@@ -25,46 +34,53 @@ O **Chang'e** é uma plataforma Full Stack desenvolvida para centralizar o geren
 - 📱 Webtoons
 - 📺 Animes
 
-O projeto nasceu da necessidade de possuir um ambiente único para organizar leituras, registrar progresso, armazenar fontes, criar anotações e gerar estatísticas pessoais.
+Mais do que um software de gerenciamento, o Chang'e também é um projeto de longo prazo criado para aplicar, validar e evoluir conceitos de Engenharia de Software em um produto real.
 
-Com o tempo, o Chang'e evoluiu para algo maior.
+---
 
-Além de ser um software útil para uso diário, tornou-se um **projeto de longo prazo**, utilizado como laboratório para estudar e aplicar boas práticas de Engenharia de Software, Arquitetura de Sistemas e Inteligência Artificial.
+# 🌙 Filosofia
+
+O Chang'e nasceu com uma ideia simples:
+
+> **Construir um software que possa evoluir continuamente durante muitos anos.**
+
+Cada decisão tomada dentro do projeto possui um propósito.
+
+Novas funcionalidades devem resolver problemas reais.
+
+Novas tecnologias devem possuir uma justificativa técnica.
+
+A evolução acontece de forma incremental, priorizando simplicidade, organização e facilidade de manutenção.
+
+O objetivo nunca foi desenvolver apenas mais um gerenciador de mídia.
+
+O objetivo é construir uma plataforma sólida, escalável e preparada para crescer continuamente.
 
 ---
 
 # 🎯 Objetivos
 
-O Chang'e possui dois objetivos principais.
+O Chang'e possui dois pilares complementares.
 
-## 📚 Produto
+## 📚 Plataforma
 
-Construir uma plataforma moderna para gerenciamento de mídias asiáticas.
+Desenvolver uma aplicação moderna para gerenciamento de mídias asiáticas, oferecendo uma experiência organizada, intuitiva e agradável para acompanhar bibliotecas pessoais.
 
-Ela deve permitir:
-
-- acompanhar leituras;
-- registrar progresso;
-- organizar biblioteca;
-- armazenar notas;
-- gerar estatísticas;
-- recomendar conteúdos futuramente.
+O foco inicial é construir uma base sólida antes da implementação de recursos mais avançados.
 
 ---
 
-## 🧠 Laboratório Técnico
+## 🧠 Laboratório de Engenharia
 
-O Chang'e também funciona como um projeto permanente de aprendizado.
+O Chang'e também funciona como um laboratório permanente para estudo e aplicação prática de tecnologias modernas.
 
-Durante sua evolução serão estudados e aplicados conceitos como:
+Ao longo da evolução do projeto serão explorados temas como:
 
-- Arquitetura Backend
-- APIs REST
-- Clean Architecture
-- Domain Driven Design (quando aplicável)
-- SQL e Modelagem
-- PostgreSQL
 - Engenharia de Software
+- Arquitetura de Software
+- APIs REST
+- Modelagem de Dados
+- PostgreSQL
 - Testes Automatizados
 - Docker
 - Observabilidade
@@ -72,153 +88,101 @@ Durante sua evolução serão estudados e aplicados conceitos como:
 - Busca Vetorial
 - RAG
 - Agentes
-- LLMs
+- Modelos Open Source
 
-Toda tecnologia incorporada deverá resolver um problema real do projeto.
-
----
-
-# ✨ Funcionalidades
-
-## 📚 Biblioteca
-
-- Cadastro de obras
-- Organização por tipo
-- Biblioteca personalizada
-- Capas
-- Metadados
+Cada tecnologia incorporada deverá existir para resolver um problema concreto da plataforma.
 
 ---
 
-## 📖 Controle de Leitura
+# ⚖️ Princípios
 
-- Capítulo atual
-- Volume atual
-- Histórico completo
-- Continuação rápida
-- Registro automático de progresso
+O desenvolvimento do Chang'e é guiado por alguns princípios fundamentais.
 
----
+## Simplicidade antes da complexidade
 
-## 🔗 Fontes
-
-Cada obra poderá possuir uma ou mais fontes.
-
-Exemplos:
-
-- Scan
-- Site oficial
-- Agregador
-- Web Novel
-- Light Novel
+Software simples é mais fácil de entender, manter e evoluir.
 
 ---
 
-## 📝 Notas
+## Arquitetura antes de tendências
 
-Cada obra poderá possuir:
+Tecnologias não são adotadas apenas porque estão em alta.
 
-- observações;
-- spoilers;
-- teorias;
-- lembretes;
-- contexto.
+Cada dependência precisa justificar sua existência.
 
 ---
 
-## ⭐ Avaliações
+## Inteligência Artificial com propósito
 
-Sistema de avaliação independente.
+IA não é um diferencial por si só.
 
-Exemplo:
-
-- História
-- Arte
-- Ritmo
-- Nota Geral
+Ela será utilizada apenas quando realmente melhorar a experiência da plataforma.
 
 ---
 
-## 📊 Analytics
+## Evolução incremental
 
-O sistema deverá gerar estatísticas como:
-
-- capítulos lidos;
-- obras concluídas;
-- tempo médio;
-- velocidade de leitura;
-- consumo por período;
-- distribuição por mídia.
+Grandes sistemas são construídos através de pequenas entregas contínuas.
 
 ---
 
-## 🔍 Pesquisa
+## Pensado para o longo prazo
 
-Pesquisa rápida por:
+Toda decisão técnica prioriza:
 
-- título;
-- título original;
-- autor;
-- coleção;
-- tags;
-- gênero.
-
----
-
-## 🤖 Inteligência Artificial (Roadmap)
-
-Recursos previstos:
-
-- recomendações inteligentes;
-- busca semântica;
-- OCR;
-- RAG;
-- chat com a biblioteca;
-- classificação automática;
-- agentes especializados.
+- Manutenção
+- Escalabilidade
+- Organização
+- Legibilidade
+- Qualidade
 
 ---
 
 # 🏗️ Arquitetura
 
+O Chang'e foi projetado para possuir baixo acoplamento entre suas camadas e facilitar sua evolução ao longo do tempo.
+
 ```text
-Frontend (React)
-
-↓
-
-REST API (FastAPI)
-
-↓
-
-Services
-
-↓
-
-Repositories
-
-↓
-
-PostgreSQL
+                Frontend
+           React + TypeScript
+                    │
+              REST API
+                    │
+                FastAPI
+                    │
+         Camada de Aplicação
+                    │
+           Camada de Domínio
+                    │
+        Repositórios / ORM
+                    │
+             PostgreSQL
 ```
 
-Arquitetura baseada em responsabilidades bem definidas.
-
-Cada camada possui uma única função.
+Novos serviços poderão ser adicionados futuramente sem comprometer a arquitetura principal.
 
 ---
 
-# 🛠️ Stack
+# 🛠️ Stack Tecnológica
 
 ## Frontend
 
 - React 19
 - TypeScript
 - Vite
-- TailwindCSS
+- Tailwind CSS
 - shadcn/ui
 - TanStack Query
 - React Hook Form
 - Zod
+
+### Objetivos do Frontend
+
+- Interface moderna e responsiva
+- Experiência consistente entre desktop, tablet e dispositivos móveis
+- Design System reutilizável
+- Evolução futura para Progressive Web App (PWA)
+- Base preparada para uma futura aplicação mobile
 
 ---
 
@@ -226,27 +190,18 @@ Cada camada possui uma única função.
 
 - Python 3.13
 - FastAPI
-- SQLAlchemy 2 Async
-- Pydantic v2
+- SQLAlchemy 2
 - Alembic
-- asyncpg
+- Pydantic
+- AsyncPG
 
 ---
 
 ## Banco de Dados
 
-- PostgreSQL 17
+- PostgreSQL
 - Redis
-- pgvector
-
----
-
-## Testes
-
-- pytest
-- pytest-asyncio
-- httpx
-- coverage.py
+- pgvector *(planejado para futuras funcionalidades de IA)*
 
 ---
 
@@ -254,6 +209,15 @@ Cada camada possui uma única função.
 
 - Docker
 - Docker Compose
+
+---
+
+## Testes
+
+- Pytest
+- Pytest Asyncio
+- HTTPX
+- Coverage
 
 ---
 
@@ -265,9 +229,10 @@ chang-e/
 ├── backend/
 ├── frontend/
 ├── docs/
-├── .harness/
 ├── docker/
 ├── scripts/
+├── tests/
+├── LICENSE
 └── README.md
 ```
 
@@ -275,63 +240,81 @@ chang-e/
 
 # 🚀 Roadmap
 
-## ✅ Fase 1
+## ✅ Fase 1 — Fundação
+
+Construção da base da plataforma.
 
 - Biblioteca
 - Cadastro de obras
 - Controle de progresso
 - Sistema de usuários
 - API REST
+- Dashboard inicial
 
 ---
 
-## 🚧 Fase 2
+## 🚧 Fase 2 — Experiência
 
-- Dashboard
+Melhoria da experiência do usuário.
+
 - Analytics
 - Coleções
 - Importação
 - Exportação
+- Progressive Web App (PWA)
+- Evolução da interface
 
 ---
 
-## 🔬 Fase 3
+## 🔬 Fase 3 — Plataforma de Leitura
 
-- Embeddings
-- Busca Vetorial
+Expansão da plataforma.
+
+- Leitor integrado
+- Upload de arquivos
+- Integração com Google Drive
+- Notas por capítulo
+- Marcadores
 - OCR
-- Recomendações
+- Pesquisa dentro da obra
 
 ---
 
-## 🤖 Fase 4
+## 🤖 Fase 4 — Inteligência Artificial
 
-- Agentes
+Aplicação prática de IA.
+
+- Recomendações inteligentes
+- Busca semântica
+- Embeddings
 - RAG
-- Chat Inteligente
+- Chat com a biblioteca
+- Agentes especializados
 - Automações
 
 ---
 
 # 📚 Documentação
 
-A documentação completa encontra-se na pasta `docs`.
+A documentação do projeto está organizada na pasta `docs`.
 
 | Documento | Descrição |
 |-----------|-----------|
-| `docs/SPEC.md` | Especificação funcional do projeto |
-| `docs/STACK.md` | Decisões técnicas e stack |
-| `.harness/CONVENTIONS.md` | Convenções de desenvolvimento |
+| `SPEC.md` | Especificação funcional da plataforma |
+| `STACK.md` | Decisões técnicas e tecnologias adotadas |
+| `ARCHITECTURE.md` | Arquitetura do sistema |
+| `ROADMAP.md` | Planejamento de evolução |
+| `AI.md` | Evolução dos recursos de Inteligência Artificial |
 
 ---
 
 # 🚀 Executando o Projeto
 
-> **Em desenvolvimento**
+> **Em desenvolvimento.**
 
-A documentação de instalação será adicionada conforme a evolução do projeto.
+A documentação de instalação será disponibilizada conforme o projeto evoluir.
 
-No futuro será possível iniciar todo o ambiente utilizando apenas:
+O objetivo é permitir a inicialização completa da plataforma através de:
 
 ```bash
 docker compose up
@@ -339,26 +322,28 @@ docker compose up
 
 ---
 
-# 🤝 Contribuição
+# 🌕
 
-Atualmente o projeto encontra-se em desenvolvimento ativo.
+## Por que "Chang'e"?
 
-Contribuições serão abertas futuramente.
+**Chang'e (嫦娥)** é a deusa da Lua na mitologia chinesa.
 
-Enquanto isso, sugestões e discussões são bem-vindas.
+A Lua representa curiosidade, descoberta e evolução contínua.
+
+Esses mesmos conceitos inspiram a filosofia do projeto:
+
+> Construir continuamente.
+>
+> Aprender constantemente.
+>
+> Evoluir a cada versão.
 
 ---
 
 # 📄 Licença
 
-Distribuído sob a licença **MIT**.
+O código-fonte do Chang'e é distribuído sob a licença **GNU Affero General Public License v3.0 (AGPL-3.0)**.
+
+Essa licença garante que melhorias realizadas e disponibilizadas como serviço também permaneçam abertas para a comunidade, preservando o caráter colaborativo do projeto.
 
 Consulte o arquivo `LICENSE` para mais informações.
-
----
-
-# 🌙 Sobre o Nome
-
-**Chang'e (嫦娥)** é a deusa chinesa da Lua na mitologia chinesa.
-
-O nome foi escolhido por representar conhecimento, jornada e evolução contínua — conceitos que refletem tanto a proposta do software quanto sua utilização como projeto permanente de estudo e experimentação tecnológica.
