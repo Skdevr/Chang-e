@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { ArrowRight, Github } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { MoonPhase } from '@/components/ui/MoonPhase'
-import { GITHUB_URL } from '@/data/site'
+import { https://github.com/Skdevr/Chang-e } from '@/data/site'
 import { fadeUp, stagger, viewportOnce } from '@/utils/motion'
 
 const phases = [0, 0.2, 0.4, 0.6, 0.8, 1]
