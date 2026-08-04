@@ -1,0 +1,38 @@
+# Ambiente local do backend do Chang'e.
+# A landing page nao e containerizada e continua sendo executada na raiz com npm.
+
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: change
+      POSTGRES_PASSWORD: local_password
+      POSTGRES_DB: change
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U change -d change"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  api:
+    build:
+      context: ./backend
+    environment:
+      APP_NAME: change-api
+      ENVIRONMENT: local
+      API_V1_PREFIX: /api/v1
+      DATABASE_URL: postgresql+asyncpg://change:local_password@db:5432/change
+      CORS_ORIGINS: '["http://localhost:5173"]'
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  postgres_data:

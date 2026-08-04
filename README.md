@@ -310,15 +310,123 @@ A documentação do projeto está organizada na pasta `docs`.
 
 # 🚀 Executando o Projeto
 
-> **Em desenvolvimento.**
+> **Em desenvolvimento.** Nesta etapa existem a landing page e a fundação do backend, com health
+> check. Autenticação e cadastro de obras ainda não foram implementados.
 
-A documentação de instalação será disponibilizada conforme o projeto evoluir.
+## Pré-requisitos
 
-O objetivo é permitir a inicialização completa da plataforma através de:
+- Node.js 22 e npm 10
+- Python 3.13
+- Docker e Docker Compose *(opcional, para subir a API com o PostgreSQL)*
+
+---
+
+## Landing page
+
+Na raiz do repositório:
 
 ```bash
-docker compose up
+npm ci
+npm run dev
 ```
+
+Build de produção:
+
+```bash
+npm run build
+```
+
+---
+
+## Ambiente do backend
+
+Crie o arquivo de ambiente a partir do exemplo versionado:
+
+```bash
+cp backend/.env.example backend/.env
+```
+
+O arquivo `backend/.env` não é versionado. O `backend/.env.example` contém apenas valores locais.
+
+Ao executar o backend fora do Docker, ajuste o host da `DATABASE_URL` de `db` para `localhost`.
+
+---
+
+## Backend com Docker Compose
+
+Na raiz do repositório:
+
+```bash
+docker compose up --build
+```
+
+Sobem dois serviços:
+
+| Serviço | Imagem | Porta |
+|---------|--------|-------|
+| `api` | build de `backend/` | `8000` |
+| `db` | `postgres:17-alpine` | `5432` |
+
+A API aguarda o health check do PostgreSQL antes de iniciar.
+
+Health check da API:
+
+```bash
+curl -i http://localhost:8000/api/v1/health
+```
+
+Resposta esperada, com HTTP 200:
+
+```json
+{ "status": "ok", "service": "change-api" }
+```
+
+Documentação interativa da API: <http://localhost:8000/docs>
+
+Encerrando os containers:
+
+```bash
+docker compose down
+```
+
+---
+
+## Backend sem Docker
+
+```bash
+cd backend
+python3.13 -m venv .venv
+source .venv/bin/activate
+pip install -e . --group dev
+uvicorn app.main:app --reload
+```
+
+---
+
+## Migrations
+
+Com o ambiente ativo, dentro de `backend/`:
+
+```bash
+alembic upgrade head
+```
+
+Ainda não há migrations, pois nenhum modelo foi criado nesta etapa.
+
+---
+
+## Qualidade
+
+Dentro de `backend/`, com o ambiente ativo:
+
+```bash
+pytest
+ruff check .
+ruff format --check .
+mypy .
+```
+
+Os testes do health check não dependem do PostgreSQL.
 
 ---
 
