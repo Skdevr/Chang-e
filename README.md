@@ -1,8 +1,20 @@
 # 🌙 Chang'e (嫦娥)
 
-\<p align="center">   \<strong>Construído para durar. Projetado para evoluir.\</strong> \</p>
+<p align="center">
+  <strong>Construído para durar. Projetado para evoluir.</strong>
+</p>
 
-\<p align="center">   \<em>Uma nova forma de organizar, descobrir e consumir suas mídias favoritas.\</em> \</p>
+<p align="center">
+  <em>Uma nova forma de organizar, descobrir e consumir suas mídias favoritas.</em>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/status-em%20desenvolvimento-orange?style=flat-square" alt="Status: Em desenvolvimento">
+  <img src="https://img.shields.io/badge/license-AGPL--3.0-blue?style=flat-square" alt="Licença AGPL-3.0">
+  <img src="https://img.shields.io/badge/Python-FastAPI-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/React-TypeScript-3178C6?style=flat-square&logo=react&logoColor=white" alt="React">
+  <img src="https://img.shields.io/badge/PostgreSQL-Database-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL">
+</p>
 
 ---
 
@@ -14,15 +26,6 @@ A Lua representa curiosidade, descoberta e evolução contínua — conceitos qu
 
 **Construir continuamente. Aprender constantemente. Evoluir a cada versão.**
 
----
-
-\<p align="center">
-&#x20; \<img src="[https://img.shields.io/badge/status-em%20desenvolvimento-orange?style=flat-square](https://img.shields.io/badge/status-em%20desenvolvimento-orange?style=flat-square)" alt="Status: Em desenvolvimento">
-&#x20; \<img src="[https://img.shields.io/badge/license-AGPL--3.0-blue?style=flat-square](https://img.shields.io/badge/license-AGPL--3.0-blue?style=flat-square)" alt="Licença AGPL-3.0">
-&#x20; \<img src="[https://img.shields.io/badge/Python-FastAPI-3776AB?style=flat-square&logo=python&logoColor=white](https://img.shields.io/badge/Python-FastAPI-3776AB?style=flat-square\&logo=python\&logoColor=white)" alt="Python">
-&#x20; \<img src="[https://img.shields.io/badge/React-TypeScript-3178C6?style=flat-square&logo=react&logoColor=white](https://img.shields.io/badge/React-TypeScript-3178C6?style=flat-square\&logo=react\&logoColor=white)" alt="React">
-&#x20; \<img src="[https://img.shields.io/badge/PostgreSQL-Database-4169E1?style=flat-square&logo=postgresql&logoColor=white](https://img.shields.io/badge/PostgreSQL-Database-4169E1?style=flat-square\&logo=postgresql\&logoColor=white)" alt="PostgreSQL">
-\</p>
 
 ---
 
