@@ -315,8 +315,8 @@ Consulte o arquivo [`LICENSE`](LICENSE) para conhecer o texto integral da licen�
 
 ---
 
-\<p align="center">
-&#x20; \<strong>🌙 Chang'e\</strong>
-&#x20; \<br>
-&#x20; \<em>Construir continuamente. Aprender constantemente. Evoluir a cada versão.\</em>
-\</p>
+<p align="center">
+  <strong>🌙 Chang'e</strong>
+  <br>
+  <em>Construir continuamente. Aprender constantemente. Evoluir a cada versão.</em>
+</p>
