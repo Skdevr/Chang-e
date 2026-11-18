@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { cn } from '@/utils/cn'
 import { fadeUp } from '@/utils/motion'
+import { StatusBadge } from '@/components/StatusBadge'
 import type { Feature } from '@/data/site'
 
 type FeatureCardProps = {
@@ -9,7 +10,7 @@ type FeatureCardProps = {
 }
 
 export function FeatureCard({ feature, className }: FeatureCardProps) {
-  const { icon: Icon, title, description, soon, span } = feature
+  const { icon: Icon, title, description, status, span } = feature
 
   return (
     <motion.article
@@ -33,11 +34,7 @@ export function FeatureCard({ feature, className }: FeatureCardProps) {
         <div className="min-w-0 space-y-2">
           <h3 className="flex flex-wrap items-center gap-2 text-[0.9375rem] font-semibold">
             {title}
-            {soon && (
-              <span className="rounded-full border border-secondary/30 bg-secondary/10 px-2 py-0.5 font-mono text-[0.5625rem] uppercase tracking-[0.14em] text-secondary">
-                Em breve
-              </span>
-            )}
+            <StatusBadge status={status} />
           </h3>
           <p className="text-[0.875rem] leading-relaxed text-muted">{description}</p>
         </div>

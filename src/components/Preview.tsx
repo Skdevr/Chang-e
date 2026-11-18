@@ -15,7 +15,7 @@ export function Preview() {
       id="preview"
       eyebrow="Interface"
       title={<>A mesma biblioteca, no formato de cada tela.</>}
-      description="Layout adaptativo de verdade: no desktop você compara, no tablet você organiza, no celular você lê. Nenhuma funcionalidade fica presa a um dispositivo."
+      description="Protótipo da interface prevista: no desktop você compara, no tablet você organiza, no celular você lê. As telas são conceito e podem mudar durante o desenvolvimento."
     >
       <motion.div
         variants={stagger(0.12)}

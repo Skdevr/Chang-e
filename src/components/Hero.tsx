@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { ArrowRight, Github, Star } from 'lucide-react'
+import { ArrowRight, Github } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Eyebrow } from '@/components/ui/Eyebrow'
 import { GlowField } from '@/components/ui/GlowField'
@@ -9,7 +9,7 @@ import { GITHUB_URL } from '@/data/site'
 import { fadeUp, stagger } from '@/utils/motion'
 import { usePrefersReducedMotion } from '@/hooks/usePrefersReducedMotion'
 
-const formats = ['Anime', 'Mangá', 'Manhwa', 'Manhua', 'Light novel', 'Web novel']
+const formats = ['Anime', 'Mangá', 'Manhwa', 'Manhua', 'Webtoon', 'Light novel', 'Web novel']
 
 export function Hero() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -47,23 +47,19 @@ export function Hero() {
             </motion.h1>
 
             <motion.p variants={fadeUp} className="mt-6 max-w-xl text-[1.0625rem] leading-relaxed text-muted">
-              O Chang&rsquo;e reúne tudo o que você lê e assiste em uma biblioteca só sua: progresso por capítulo,
-              notas ancoradas, estatísticas honestas e sincronização entre dispositivos. Sem anúncios, sem algoritmo
-              disputando sua atenção.
+              O Chang&rsquo;e é uma plataforma open source, em desenvolvimento, para reunir tudo o que você lê e
+              assiste em uma biblioteca só sua: progresso por capítulo e notas ancoradas agora, e estatísticas,
+              sincronização e recomendações explicadas nas próximas fases.
             </motion.p>
 
             <motion.div variants={fadeUp} className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Button as="a" href="#cta" size="lg" className="group">
-                Começar gratuitamente
+                Acompanhar o projeto
                 <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-0.5" />
               </Button>
               <Button as="a" href={GITHUB_URL} target="_blank" rel="noreferrer" variant="secondary" size="lg">
                 <Github className="size-4" />
                 Ver no GitHub
-                <span className="ml-1 flex items-center gap-1 font-mono text-[0.75rem] text-muted">
-                  <Star className="size-3" aria-hidden="true" />
-                  2.1k
-                </span>
               </Button>
             </motion.div>
 

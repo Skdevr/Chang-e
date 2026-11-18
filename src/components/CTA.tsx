@@ -33,22 +33,22 @@ export function CTA() {
             variants={fadeUp}
             className="relative mx-auto mt-8 max-w-3xl text-[clamp(2rem,5vw,3.4rem)] font-semibold leading-[1.06]"
           >
-            Comece hoje a sua estante — <span className="text-gradient">e nunca mais perca o fio.</span>
+            Acompanhe a construção da sua estante — <span className="text-gradient">e nunca mais perca o fio.</span>
           </motion.h2>
 
           <motion.p variants={fadeUp} className="relative mx-auto mt-5 max-w-xl text-[1.0625rem] leading-relaxed text-muted">
-            Conta gratuita, sem cartão. Importe sua lista do MyAnimeList ou do AniList em um minuto e continue de
-            onde parou.
+            O Chang&rsquo;e ainda está em desenvolvimento. Siga o roadmap, acompanhe as issues no GitHub ou contribua:
+            a importação de listas do MyAnimeList, do AniList e do Mihon está planejada.
           </motion.p>
 
           <motion.div variants={fadeUp} className="relative mt-10 flex flex-col justify-center gap-3 sm:flex-row">
-            <Button as="a" href="#hero" size="lg" className="group">
-              Começar gratuitamente
+            <Button as="a" href="#roadmap" size="lg" className="group">
+              Ver o roadmap
               <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-0.5" />
             </Button>
             <Button as="a" href={GITHUB_URL} target="_blank" rel="noreferrer" variant="secondary" size="lg">
               <Github className="size-4" />
-              Prefiro hospedar eu mesmo
+              Acompanhar no GitHub
             </Button>
           </motion.div>
         </motion.div>

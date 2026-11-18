@@ -158,6 +158,11 @@ export const FEATURES: Feature[] = [
   },
 ];
 
+export interface PhaseItem {
+  label: string;
+  status: Status;
+}
+
 export interface Phase {
   number: 1 | 2 | 3 | 4 | 5;
   title: string;
@@ -166,7 +171,12 @@ export interface Phase {
   // Percentual calculado a partir das issues fechadas do milestone no GitHub.
   // Use null enquanto não houver cálculo real: o componente não exibe número.
   progress: number | null;
+  // Itens resumidos da fase, espelhando as listas do README.
+  items: PhaseItem[];
 }
+
+const dev = (label: string): PhaseItem => ({ label, status: "em-desenvolvimento" });
+const plan = (label: string): PhaseItem => ({ label, status: "planejado" });
 
 export const PHASES: Phase[] = [
   {
@@ -175,6 +185,17 @@ export const PHASES: Phase[] = [
     description: "A base da plataforma: biblioteca, progresso, notas, API e autenticação.",
     status: "em-desenvolvimento",
     progress: null,
+    items: [
+      dev("Biblioteca e obras"),
+      dev("Coleções, favoritos e tags"),
+      dev("Progresso e notas por capítulo"),
+      dev("Busca"),
+      dev("API REST"),
+      dev("Autenticação"),
+      dev("PWA e tema escuro"),
+      plan("Swagger / OpenAPI"),
+      plan("Exportação em JSON"),
+    ],
   },
   {
     number: 2,
@@ -182,6 +203,15 @@ export const PHASES: Phase[] = [
     description: "Catálogos externos, importação de listas e catálogo unificado.",
     status: "planejado",
     progress: null,
+    items: [
+      plan("AniList"),
+      plan("MangaDex"),
+      plan("Avaliação de MyAnimeList e Kitsu"),
+      plan("Importação de listas"),
+      plan("Datas de lançamento"),
+      plan("Status de obra"),
+      plan("Catálogo unificado"),
+    ],
   },
   {
     number: 3,
@@ -189,6 +219,13 @@ export const PHASES: Phase[] = [
     description: "Ler dentro do Chang'e, com os seus próprios arquivos.",
     status: "planejado",
     progress: null,
+    items: [
+      plan("Reader integrado"),
+      plan("EPUB e PDF"),
+      plan("Upload de arquivos"),
+      plan("OCR"),
+      plan("Tradução assistida por IA"),
+    ],
   },
   {
     number: 4,
@@ -196,6 +233,13 @@ export const PHASES: Phase[] = [
     description: "Biblioteca em vários ambientes: local, NAS, nuvem e self-hosted.",
     status: "planejado",
     progress: null,
+    items: [
+      plan("Armazenamento local"),
+      plan("Google Drive"),
+      plan("NAS"),
+      plan("Sincronização entre dispositivos"),
+      plan("Self-hosted com docker compose"),
+    ],
   },
   {
     number: 5,
@@ -203,5 +247,14 @@ export const PHASES: Phase[] = [
     description: "Recomendações explicadas, resumos sem spoiler e recursos sociais.",
     status: "planejado",
     progress: null,
+    items: [
+      plan("Recomendações explicadas"),
+      plan("Resumos sem spoiler"),
+      plan("Busca semântica e RAG"),
+      plan("Assistente conversacional"),
+      plan("Estatísticas"),
+      plan("Perfis públicos"),
+      plan("Listas compartilhadas"),
+    ],
   },
 ];

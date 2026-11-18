@@ -59,11 +59,11 @@ export function Navbar() {
           </ul>
 
           <div className="hidden items-center gap-2 lg:flex">
-            <Button as="a" href="#cta" variant="ghost" size="sm">
-              Entrar
+            <Button as="a" href="#roadmap" variant="ghost" size="sm">
+              Ver roadmap
             </Button>
             <Button as="a" href="#cta" size="sm">
-              Começar gratuitamente
+              Acompanhar o projeto
             </Button>
           </div>
 
@@ -106,10 +106,10 @@ export function Navbar() {
               </ul>
               <div className="container-page flex flex-col gap-2 pb-6">
                 <Button as="a" href={GITHUB_URL} target="_blank" rel="noreferrer" variant="secondary" size="lg">
-                  Entrar
+                  Ver no GitHub
                 </Button>
                 <Button as="a" href="#cta" size="lg" onClick={() => setOpen(false)}>
-                  Começar gratuitamente
+                  Acompanhar o projeto
                 </Button>
               </div>
             </motion.div>

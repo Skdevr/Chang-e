@@ -1,6 +1,6 @@
-import { ArrowUpRight, Github, MessageCircle } from 'lucide-react'
+import { ArrowUpRight, Github } from 'lucide-react'
 import { Logo } from '@/components/ui/Logo'
-import { DISCORD_URL, GITHUB_URL } from '@/data/site'
+import { GITHUB_URL } from '@/data/site'
 
 const columns = [
   {
@@ -9,24 +9,23 @@ const columns = [
       { label: 'Funcionalidades', href: '#funcionalidades' },
       { label: 'Interface', href: '#preview' },
       { label: 'Roadmap', href: '#roadmap' },
-      { label: 'Criar conta', href: '#cta' },
+      { label: 'Acompanhar o projeto', href: '#cta' },
     ],
   },
   {
     title: 'Projeto',
     links: [
       { label: 'Repositório', href: GITHUB_URL },
-      { label: 'Contribuir', href: `${GITHUB_URL}/blob/main/CONTRIBUTING.md` },
+      { label: 'Contribuir', href: `${GITHUB_URL}#-contribuições` },
       { label: 'Issues abertas', href: `${GITHUB_URL}/issues` },
-      { label: 'Changelog', href: `${GITHUB_URL}/releases` },
+      { label: 'Licença AGPL-3.0', href: `${GITHUB_URL}/blob/main/LICENSE` },
     ],
   },
   {
     title: 'Comunidade',
     links: [
-      { label: 'Discord', href: DISCORD_URL },
-      { label: 'Discussões', href: `${GITHUB_URL}/discussions` },
       { label: 'Reportar um bug', href: `${GITHUB_URL}/issues/new` },
+      { label: 'Sugerir uma ideia', href: `${GITHUB_URL}/issues/new` },
     ],
   },
 ]
@@ -39,8 +38,8 @@ export function Footer() {
           <div className="max-w-sm space-y-5">
             <Logo />
             <p className="text-[0.875rem] leading-relaxed text-muted">
-              Uma biblioteca só sua para anime, mangá, manhwa, manhua e novels. Open source, sem anúncios e pronta
-              para rodar no seu servidor.
+              Uma biblioteca só sua para anime, mangá, manhwa, manhua, webtoons e novels. Open source e em
+              desenvolvimento, aberto a contribuições.
             </p>
             <div className="flex gap-2">
               <a
@@ -51,15 +50,6 @@ export function Footer() {
                 aria-label="Repositório no GitHub"
               >
                 <Github className="size-4" />
-              </a>
-              <a
-                href={DISCORD_URL}
-                target="_blank"
-                rel="noreferrer"
-                className="grid size-9 place-items-center rounded-xl border border-line text-muted transition-colors hover:border-white/15 hover:text-ink"
-                aria-label="Comunidade no Discord"
-              >
-                <MessageCircle className="size-4" />
               </a>
             </div>
           </div>

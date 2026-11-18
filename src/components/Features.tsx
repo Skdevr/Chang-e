@@ -9,8 +9,8 @@ export function Features() {
     <Section
       id="funcionalidades"
       eyebrow="Funcionalidades"
-      title={<>Tudo o que uma estante deveria fazer — e nada além disso.</>}
-      description="Cada recurso existe para responder a uma pergunta concreta: o que eu estava lendo, onde parei, o que vem depois e o que eu achei disso."
+      title={<>Tudo o que uma estante deveria fazer — e cada recurso com um motivo.</>}
+      description="Cada recurso existe para responder a uma pergunta concreta: o que eu estava lendo, onde parei, o que vem depois e o que eu achei disso. Cada card mostra em que pé ele está."
     >
       <motion.div
         variants={stagger(0.06)}
